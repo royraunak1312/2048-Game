@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="2048.css">
+    
+    <script src="2048.js"></script>
+</head>
+
+<body>
+    <div class="welcomeScreen">
+        <h1 class="welcomeText">2048</h1>
+    </div>
+    <div class="gameScreen">
+        <h1>2048</h1>
+        <hr>
+        <button onclick="undoMove()" class="button button1">Undo</button>
+        <!-- <button onclick="window.location.reload();" class="button button2">Reset</button> -->
+        <button onclick="setGame()" class="button button2">Reset</button>
+
+        <div class="row">
+            <div id="board" class="column">
+            </div>
+            <div class="column">
+                <h2>Score: <span id="score">0</span></h2>
+                <h2>Highscores: <span id="highscore">0</span></h2>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
